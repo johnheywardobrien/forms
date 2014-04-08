@@ -2,27 +2,42 @@
 
 <html>
 <body>
- <form action="#" method="POST name="my_form"><br>
-  <input type="text" name="username"><br>
-  <input type="password" name="password"><br>
-  <input type="radio" name="gender" value="Male">Male><br>
-  <input type="radio" name="gender" value="Female">Female><br>
-  <input type="checkbox" name="foods" value="Grapes">Grapes><br>
-  <input type="checkbox" name="foods" value="Apples">Apples><br>
-  <input type="checkbox" name="foods" value="Bananas">Bananas><br>
+ <form action="#" method="POST" name="my_form"><br>
+  <fieldset>
+    <legend align="Center">Important Information</legend>
+    <label for="username">Username:</label>
+    <input type="text" name="username" id="username"><br>
+    <label for="password">Password:</label>
+    <input type="password" name="password" id="password"><br>
+    
+    <input type="radio" name="gender" value="Male" id="male"><label for="male">Male</label><br>
+    <input type="radio" name="gender" value="Female" id="female"><label for="female">Female</label><br>
+    <input type="checkbox" name="foods" value="Grapes" id="grapes"><label for="grapes">Grapes</label><br>
+    <input type="checkbox" name="foods" value="Bananas" id="bananas"><label for="bananas">Bananas</label><br>
+    <input type="checkbox" name="foods" value="Apples" id="apples"><label for="apples">Apples</label><br>
+  </fieldset>
   
-  <textarea name="Essay" rows="10" cols="30"></textarea><br>
   
-  <select>
-    <option>North America</option>
-    <option>South America</option>
-    <option>Europe</option>
-    <option>Africa</option>
-    <option>Asia</option>
-    <option>Australia</option>
-    <option>Antartica</option>
-  </select>
-  
+  <fieldset>
+    <legend align="Center">Optional Items</legend>
+    <label for="essay">We want to know more about you!<br>Write a short essay about yourself.</label><br>
+    <textarea name="Essay" id="essay" rows="10" cols="30"></textarea><br>
+    
+    <label for="continents">Where are you from?</label><br>
+    <select name="contients" id="continents">
+      <optgroup label="Americas">
+	<option>North America</option>
+	<option>South America</option>
+      </optgroup>
+      <optgroup label="Eurasia">
+	<option>Europe</option>
+	<option>Africa</option>
+      </optgroup>s
+      <option>Asia</option>
+      <option>Australia</option>
+      <option>Antartica</option>
+    </select>
+  </fieldset>
   <br>
   
   <input type="submit" value="Continue"><br>
